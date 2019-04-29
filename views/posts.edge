@@ -1,0 +1,31 @@
+@layout('layouts.header')
+
+@section('content')
+    <ul>
+        @each(post in  posts)
+       <div class="container">
+           <div id="blog" class="row"> 
+               <div class="col-md-10 blogShort">
+                   <h1>{{post.title}}</h1>
+                   <img src="/img/{{post.image}}" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
+                    <br />
+                   <em>Author :{{post.author}}</em><br />
+                   <em>Post Date: {{post.date.toDateString()}} Time: {{post.date.toLocaleTimeString()}}</em>
+                   <article><p>
+                      {{post.body}}
+                   </p></article>
+                  
+                       
+                   <div class="col-md-12 gap10"></div>
+               </div>
+            </div>
+       @endeach
+   </ul>
+
+   @endsection
+   
+
+
+
+
+

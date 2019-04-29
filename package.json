@@ -1,0 +1,23 @@
+{
+  "name": "Imperial",
+  "version": "1.0.0",
+  "description": "Thanks for downloading this theme!",
+  "main": "srever.js",
+  "scripts": {
+    "start": "nodemon  route.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "edge.js": "^1.1.4",
+    "express": "^4.16.4",
+    "express-fileupload": "^1.1.4",
+    "mongoose": "^5.5.4",
+    "mysql": "^2.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  }
+}
