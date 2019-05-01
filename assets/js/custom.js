@@ -108,3 +108,21 @@ jQuery(document).ready(function( $ ) {
   });
 
 });
+
+(function () {
+   let signDomTab = document.getElementsByClassName("cd-signin")[0];
+   let sugnDomTab = document.getElementsByClassName("cd-signup")[0];
+   let domsign = document.getElementsByClassName("tab-content");
+   signDomTab.addEventListener('click',function() {
+        domsign[1].classList.add("active")
+        domsign[0].classList.remove("active")
+        signDomTab.classList.add('active')
+        sugnDomTab.classList.remove('active')
+   })
+   sugnDomTab.addEventListener('click',function() {
+    domsign[0].classList.add("active")
+    domsign[1].classList.remove("active")
+    signDomTab.classList.remove('active')
+    sugnDomTab.classList.add('active')
+   })
+})();
